@@ -1,0 +1,1 @@
+CREATE TABLE carrera(Id_Carrera VARCHAR(5) PRIMARY KEY, Carrera VARCHAR(100));
