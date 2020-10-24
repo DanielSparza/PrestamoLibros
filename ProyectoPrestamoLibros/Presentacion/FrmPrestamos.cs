@@ -37,7 +37,7 @@ namespace Presentacion
         {
             opcion = cmbPrestamos.Text;
             Actualizar();
-            //MessageBox.Show("opción: "+opcion);
+            Limpiar();
         }
 
         private void txtBuscarPrestamo_TextChanged(object sender, EventArgs e)
@@ -84,7 +84,6 @@ namespace Presentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("opcion guardar: "+opcion);
             if(opcion == "Alumnos")
             {
                 if (txtISBN.Text != "")
@@ -93,7 +92,7 @@ namespace Presentacion
                     {
                         epa = new EntidadPrestamoAlumnos(epa.IdPrestamo, txtISBN.Text, int.Parse(txtNoControl.Text), dtpFechaPrestamo.Text, "", txtEstado.Text);
                         string r1 = mpa.Modificar(epa);
-                        MessageBox.Show("El prestamo de alumno se modificó correctamente.");
+                        MessageBox.Show("El registro se modificó correctamente.");
                         Limpiar();
                         Actualizar();
                         x = 0;
@@ -121,7 +120,7 @@ namespace Presentacion
                     {
                         epp = new EntidadPrestamoProfesores(epp.IdPrestamo, txtISBN.Text, int.Parse(txtNoControl.Text), dtpFechaPrestamo.Text, "", txtEstado.Text);
                         string r1 = mpp.Modificar(epp);
-                        MessageBox.Show("El prestamo de profesor se modificó correctamente.");
+                        MessageBox.Show("El registro se modificó correctamente.");
                         Limpiar();
                         Actualizar();
                         x = 0;
@@ -169,7 +168,7 @@ namespace Presentacion
             }
             else if (opcion == "Profesores")
             {
-                if (filaProfesores >= 0 && epa.ISBN != "")
+                if (filaProfesores >= 0 && epp.ISBN != "")
                 {
                     txtISBN.Text = epp.ISBN;
                     txtNoControl.Text = epp.NoControl.ToString();
@@ -243,6 +242,7 @@ namespace Presentacion
                 {
                     dgvPrestamos.Columns[i].ReadOnly = true;
                 }
+                lblPrestamo.Text = "Prestamos Alumnos";
             }
             else if (opcion == "Profesores")
             {
@@ -253,8 +253,8 @@ namespace Presentacion
                 {
                     dgvPrestamos.Columns[i].ReadOnly = true;
                 }
+                lblPrestamo.Text = "Prestamos Profesores";
             }
-            //MessageBox.Show("Combo: "+cmbPrestamos.Text);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

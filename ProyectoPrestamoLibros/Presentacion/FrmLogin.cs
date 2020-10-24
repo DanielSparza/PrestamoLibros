@@ -25,5 +25,10 @@ namespace Presentacion
                 MessageBox.Show("Usuario o Contraseña no validos.");
             }
         }
+
+        public void Cerrar()
+        {
+            Close();
+        }
     }
 }

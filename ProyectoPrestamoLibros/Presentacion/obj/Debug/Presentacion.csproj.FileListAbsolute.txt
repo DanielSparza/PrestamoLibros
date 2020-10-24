@@ -33,3 +33,7 @@ S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\bin\Debu
 S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\obj\Debug\Presentacion.FrmProfesores.resources
 S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\obj\Debug\Presentacion.FrmLibros.resources
 S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\obj\Debug\Presentacion.FrmPrestamos.resources
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\bin\Debug\Presentacion.exe.manifest
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\bin\Debug\Presentacion.application
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\obj\Debug\Presentacion.exe.manifest
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Presentacion\obj\Debug\Presentacion.application

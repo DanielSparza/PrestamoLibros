@@ -5,7 +5,7 @@ namespace Presentacion
 {
     public partial class FrmPrincipal : Form
     {
-        int x;
+        FrmLogin fl = new FrmLogin();
 
         public FrmPrincipal()
         {
@@ -15,6 +15,8 @@ namespace Presentacion
         private void tsbSalir_Click(object sender, EventArgs e)
         {
             Close();
+            cerrarForms();
+            fl.Cerrar();
         }
 
         private void btnAlumnos_Click(object sender, EventArgs e)

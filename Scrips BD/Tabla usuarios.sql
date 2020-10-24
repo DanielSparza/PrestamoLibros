@@ -1,0 +1,1 @@
+CREATE TABLE usuarios(NombreUsuario VARCHAR(20) PRIMARY KEY, Contrasena VARCHAR(15));

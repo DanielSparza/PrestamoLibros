@@ -48,6 +48,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.lblPrestamo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,11 +181,11 @@
             this.dgvPrestamos.BackgroundColor = System.Drawing.Color.Teal;
             this.dgvPrestamos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrestamos.Location = new System.Drawing.Point(50, 62);
+            this.dgvPrestamos.Location = new System.Drawing.Point(50, 90);
             this.dgvPrestamos.Name = "dgvPrestamos";
             this.dgvPrestamos.ReadOnly = true;
             this.dgvPrestamos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPrestamos.Size = new System.Drawing.Size(779, 421);
+            this.dgvPrestamos.Size = new System.Drawing.Size(779, 393);
             this.dgvPrestamos.TabIndex = 58;
             this.dgvPrestamos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrestamos_CellClick);
             // 
@@ -314,12 +315,25 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // lblPrestamo
+            // 
+            this.lblPrestamo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPrestamo.AutoSize = true;
+            this.lblPrestamo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrestamo.ForeColor = System.Drawing.Color.White;
+            this.lblPrestamo.Location = new System.Drawing.Point(46, 61);
+            this.lblPrestamo.Name = "lblPrestamo";
+            this.lblPrestamo.Size = new System.Drawing.Size(0, 22);
+            this.lblPrestamo.TabIndex = 79;
+            // 
             // FrmPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1132, 557);
+            this.Controls.Add(this.lblPrestamo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbPrestamos);
             this.Controls.Add(this.label6);
@@ -372,5 +386,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbPrestamos;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblPrestamo;
     }
 }
