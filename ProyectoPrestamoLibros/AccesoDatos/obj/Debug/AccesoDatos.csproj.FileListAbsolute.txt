@@ -1,0 +1,16 @@
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\AccesoDatos.exe.config
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\AccesoDatos.exe
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\AccesoDatos.pdb
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\Bases.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\MySql.Data.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\Google.Protobuf.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\BouncyCastle.Crypto.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\Ubiety.Dns.Core.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\Renci.SshNet.dll
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\Bases.pdb
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\bin\Debug\MySql.Data.xml
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\obj\Debug\AccesoDatos.csproj.CopyComplete
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\obj\Debug\AccesoDatos.exe
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\AccesoDatos\obj\Debug\AccesoDatos.pdb

@@ -4,7 +4,7 @@ using AccesoDatos;
 
 namespace Manejadores
 {
-    class ManejadorPrestamoProfesores
+    public class ManejadorPrestamoProfesores
     {
         ConexionPrestamoLibros cl = new ConexionPrestamoLibros();
         string Fecha;
@@ -16,7 +16,7 @@ namespace Manejadores
         //Guardar Prestamo de Profesor
         public string Guardar(EntidadPrestamoProfesores prestamoProfesores)
         {
-            return aumentarFecha(prestamoProfesores.ISBN, prestamoProfesores.NoControl, prestamoProfesores.FechaPrestamo, prestamoProfesores.Estado);
+            return aumentarFechaInsertar(prestamoProfesores.ISBN, prestamoProfesores.NoControl, prestamoProfesores.FechaPrestamo, prestamoProfesores.Estado);
         }
 
         //Borrar Prestamo de Profesor
@@ -28,18 +28,7 @@ namespace Manejadores
         //Modificar Prestamo de Profesor
         public string Modificar(EntidadPrestamoProfesores prestamoProfesores)
         {
-            string[] nuevafecha = prestamoProfesores.FechaPrestamo.Split('-'); //Separa la fecha ingresada por año, mes y dia
-
-            anio = int.Parse(nuevafecha[0]); //se asigna el año a la variable
-            mes = int.Parse(nuevafecha[1]); //Se asigna el mes a la variable
-            dia = int.Parse(nuevafecha[2]); //Se asigna el dia a la variable
-
-            bisiesto(anio); //Calcula si el año es bisiesto
-            dias_mes(mes, anio); //Calcula los dias del mes
-            evaluar(dia, mes, anio); //Devuelve la fecha aumentada
-
-            return cl.Comando(string.Format("update prestamosprofesores set ISBN='{0}', NoControl={1}, FechaPrestamo='{2}', FechaDevolucion='{3}', Estado='{4}' where Id_Prestamo={5}",
-                prestamoProfesores.ISBN, prestamoProfesores.NoControl, prestamoProfesores.FechaPrestamo, Fecha, prestamoProfesores.Estado, prestamoProfesores.IdPrestamo));
+            return aumentarFechaModificar(prestamoProfesores.ISBN, prestamoProfesores.NoControl, prestamoProfesores.FechaPrestamo, prestamoProfesores.Estado, prestamoProfesores.IdPrestamo);
         }
 
         //Mostrar Informacion
@@ -49,7 +38,7 @@ namespace Manejadores
         }
 
         //Metodo para aumentar la fecha automaticamente
-        public string aumentarFecha(string isbn, int nocontrol, string fechaprestamo, string estado)
+        public string aumentarFechaInsertar(string isbn, int nocontrol, string fechaprestamo, string estado)
         {
             string[] nuevafecha = fechaprestamo.Split('-'); //Separa la fecha ingresada por año, mes y dia
 
@@ -61,8 +50,24 @@ namespace Manejadores
             dias_mes(mes, anio); //Calcula los dias del mes
             evaluar(dia, mes, anio); //Devuelve la fecha aumentada
 
-            return cl.Comando(string.Format("insert into prestamosalumnos values" +
+            return cl.Comando(string.Format("insert into prestamosprofesores values" +
                 "(NULL, '{0}', {1}, '{2}', '{3}', '{4}')", isbn, nocontrol, fechaprestamo, Fecha, estado));
+        }
+
+        //Metodo para aumentar la fecha automaticamente
+        public string aumentarFechaModificar(string isbn, int nocontrol, string fechaprestamo, string estado, int id)
+        {
+            string[] nuevafecha = fechaprestamo.Split('-'); //Separa la fecha ingresada por año, mes y dia
+
+            anio = int.Parse(nuevafecha[0]); //se asigna el año a la variable
+            mes = int.Parse(nuevafecha[1]); //Se asigna el mes a la variable
+            dia = int.Parse(nuevafecha[2]); //Se asigna el dia a la variable
+
+            bisiesto(anio); //Calcula si el año es bisiesto
+            dias_mes(mes, anio); //Calcula los dias del mes
+            evaluar(dia, mes, anio); //Devuelve la fecha aumentada
+
+            return cl.Comando(string.Format("update prestamosprofesores set ISBN='{0}', NoControl={1}, FechaPrestamo='{2}', FechaDevolucion='{3}', Estado='{4}' where Id_Prestamo={5}", isbn, nocontrol, fechaprestamo, Fecha, estado, id));
         }
 
         //Metodo para saber si el año es bisiesto

@@ -18,5 +18,11 @@ namespace AccesoDatos
         {
             return c.Consultar(q, tabla);
         }
+
+        //Metodo para verificar usuario y contraseña
+        public bool verificar(string tabla, string campousuario, string campocontrasena, string usuario, string contrasena)
+        {
+            return c.IniciarSesion(tabla, campousuario, campocontrasena, usuario, contrasena);
+        }
     }
 }

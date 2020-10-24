@@ -1,0 +1,7 @@
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\bin\Debug\Entidades.exe.config
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\bin\Debug\Entidades.exe
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\bin\Debug\Entidades.pdb
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\obj\Debug\Entidades.exe
+S:\Ejercicios de git\prestamolibros\ProyectoPrestamoLibros\Entidades\obj\Debug\Entidades.pdb

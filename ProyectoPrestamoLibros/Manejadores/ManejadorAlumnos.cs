@@ -11,7 +11,7 @@ namespace Manejadores
         ConexionPrestamoLibros cl = new ConexionPrestamoLibros();
 
         //Extraer id Carrera
-        public string GetIdCategoria(string carrera)
+        public string GetIdCarrera(string carrera)
         {
             try
             {
